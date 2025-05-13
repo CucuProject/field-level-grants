@@ -1,0 +1,19 @@
+{
+  "name": "@cucu/field-level-grants",
+  "version": "0.0.1",
+  "description": "Field-level grants utils (Introspection, GrantsLookup, etc.)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/microservices": "^10.0.0",
+    "graphql": "^16.6.0",
+    "rxjs": "^7.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.0"
+  }
+}
