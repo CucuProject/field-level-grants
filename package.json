@@ -1,6 +1,6 @@
 {
   "name": "@cucu/field-level-grants",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Field-level grants utils (Introspection, GrantsLookup, etc.)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

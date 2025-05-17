@@ -15,5 +15,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./introspection-fields.service"), exports);
-__exportStar(require("./grants-lookup.service"), exports);
+__exportStar(require("./universal-grants-lookup.service"), exports);
 __exportStar(require("./grants-projection.helper"), exports);
