@@ -29,19 +29,7 @@ const rxjs_1 = require("rxjs");
  * Service “universale” che decide al volo se usare RPC o adapter locale.
  */
 let UniversalGrantsLookupService = class UniversalGrantsLookupService {
-    constructor(
-    /**
-     * Se siamo in un microservizio DIVERSO da Grants,
-     * allora avremo un `@Inject('GRANTS_SERVICE') ClientProxy`.
-     * Se non esiste, il valore sarà `null`.
-     */
-    remoteClient, 
-    /**
-     * Se siamo DENTRO al microservizio Grants, iniettiamo un adapter
-     * (implementa `IGrantsLocalAdapter`) che fornisce `findPermissionsByGroup(...)`.
-     * Se non esiste, il valore è `null`.
-     */
-    localAdapter) {
+    constructor(remoteClient, localAdapter) {
         this.remoteClient = remoteClient;
         this.localAdapter = localAdapter;
     }
@@ -90,7 +78,8 @@ let UniversalGrantsLookupService = class UniversalGrantsLookupService {
         return union;
     }
 };
-UniversalGrantsLookupService = __decorate([
+exports.UniversalGrantsLookupService = UniversalGrantsLookupService;
+exports.UniversalGrantsLookupService = UniversalGrantsLookupService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, common_1.Optional)()),
     __param(0, (0, common_1.Inject)('GRANTS_SERVICE')),
@@ -98,4 +87,3 @@ UniversalGrantsLookupService = __decorate([
     __param(1, (0, common_1.Inject)('GRANTS_LOCAL_ADAPTER')),
     __metadata("design:paramtypes", [Object, Object])
 ], UniversalGrantsLookupService);
-exports.UniversalGrantsLookupService = UniversalGrantsLookupService;
