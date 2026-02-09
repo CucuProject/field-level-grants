@@ -155,8 +155,8 @@ let LocalSchemaFieldsService = LocalSchemaFieldsService_1 = class LocalSchemaFie
         return results;
     }
 };
-LocalSchemaFieldsService = LocalSchemaFieldsService_1 = __decorate([
+exports.LocalSchemaFieldsService = LocalSchemaFieldsService;
+exports.LocalSchemaFieldsService = LocalSchemaFieldsService = LocalSchemaFieldsService_1 = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [graphql_1.GraphQLSchemaHost])
 ], LocalSchemaFieldsService);
-exports.LocalSchemaFieldsService = LocalSchemaFieldsService;
